@@ -29,7 +29,7 @@ describe LandmarksController do
 
   it "allows you to list all landmarks" do
     visit '/landmarks'
-    
+
     expect(page.status_code).to eq(200)
 
     expect(page.body).to include("BQE")
